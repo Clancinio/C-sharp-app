@@ -4,17 +4,17 @@ using System.Text;
 
 namespace SchoolLibrary
 {
-    class School
+    public class School
     {
 
-        string Name { get; set;}
-        string Address { get; set; }
-        string City { get; set; }
-        string State { get; set; }
-        string Zip { get; set; }
-        string Number { get; set; }
-        string _twitterAddress;
-        string TwitterAddress
+        public string Name { get; set;}
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
+        public string Number { get; set; }
+        private string _twitterAddress;
+        public string TwitterAddress
         {
             // Make sure the twitter address starts with an @ symbol 
             get { return _twitterAddress; }
@@ -29,6 +29,18 @@ namespace SchoolLibrary
                 }
 
             }
+        }
+
+        public School()
+        {
+            Name = "Untitled School";
+            Number = "555-1234";
+        }
+
+        public School(string SchoolName, string SchoolNumber)
+        {
+            Name = SchoolName;
+            Number = SchoolNumber;
         }
     }
 }
