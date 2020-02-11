@@ -51,9 +51,10 @@ namespace SchoolLibrary
         //}
 
         // Function bodies expression - a more concise way to write a function (simple logic)
-        public float AvgThreeScores(float a, float b, float c) => (a + b + c) / 3;
+        public static float AvgThreeScores(float a, float b, float c) => (a + b + c) / 3;
 
-        public int AvgThreeScores(int a, int b, int c)
+        // Static - you dont need to make an instance of the object to access static methods
+        public static int AvgThreeScores(int a, int b, int c)
         {
             var result = (a + b + c) / 3;
             return result;
