@@ -44,11 +44,6 @@ namespace SchoolLibrary
             Number = SchoolNumber;
         }
 
-        //public float AvgThreeScores(float a, float b, float c)
-        //{
-        //    var result = (a + b + c) / 3;
-        //    return result;
-        //}
 
         // Function bodies expression - a more concise way to write a function (simple logic)
         public static float AvgThreeScores(float a, float b, float c) => (a + b + c) / 3;
@@ -58,6 +53,20 @@ namespace SchoolLibrary
         {
             var result = (a + b + c) / 3;
             return result;
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Name);
+            sb.AppendLine(Address);
+            sb.AppendLine(City);
+            sb.Append(", ");
+            sb.Append(State);
+            sb.Append("  ");
+            sb.Append(Zip);
+
+            return sb.ToString();
         }
     }
 }
