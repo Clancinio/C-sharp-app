@@ -44,11 +44,14 @@ namespace SchoolLibrary
             Number = SchoolNumber;
         }
 
-        public float AvgThreeScores(float a, float b, float c)
-        {
-            var result = (a + b + c) / 3;
-            return result;
-        }
+        //public float AvgThreeScores(float a, float b, float c)
+        //{
+        //    var result = (a + b + c) / 3;
+        //    return result;
+        //}
+
+        // Function bodies expression - a more concise way to write a function (simple logic)
+        public float AvgThreeScores(float a, float b, float c) => (a + b + c) / 3;
 
         public int AvgThreeScores(int a, int b, int c)
         {
