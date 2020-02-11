@@ -30,17 +30,30 @@ namespace SchoolLibrary
 
             }
         }
-
+        // Constructor 
         public School()
         {
             Name = "Untitled School";
             Number = "555-1234";
         }
 
+        // Constructor with Parameters
         public School(string SchoolName, string SchoolNumber)
         {
             Name = SchoolName;
             Number = SchoolNumber;
+        }
+
+        public float AvgThreeScores(float a, float b, float c)
+        {
+            var result = (a + b + c) / 3;
+            return result;
+        }
+
+        public int AvgThreeScores(int a, int b, int c)
+        {
+            var result = (a + b + c) / 3;
+            return result;
         }
     }
 }
